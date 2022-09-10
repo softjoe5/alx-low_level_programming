@@ -5,21 +5,25 @@
  * main - Entry point
  * Description: checks on the last digit of the assigned var
  * Return: Always 0 (success)
- */
+ *  */
 int main(void)
 {
-		int n;
-			int lastDigit;
+	int n, m;
 
-				srand(time(0));
-					n = rand() - RAND_MAX / 2;
-						lastDigit = n % 10;
-							printf("Last digit of %d is %d and is ", n, lastDigit);
-								if (lastDigit > 5)
-											printf("greater than 5\n");
-									else if (lastDigit == 0)
-												printf("0\n");
-										else
-													printf("less than 6 and not 0\n");
-											return (0);
-}
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	m = n % 10;
+	if (m > 5
+	{
+	printf("Last digit of %d is %d and is greater than 5\n", n, m);
+	}
+	else if (m < 6 && m != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is 0\n", n, m);
+	}		
+	return (0)
+	}				
